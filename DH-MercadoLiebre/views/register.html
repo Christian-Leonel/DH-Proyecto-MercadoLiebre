@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Regstrarse - Mercado Liebre</title>
+    <title>Registrarse - Mercado Liebre</title>
 </head>
 
 <body>
@@ -75,7 +75,7 @@
                 <label>Domicilio</label>
                 <input type="text">
             </div>
-            <div class="field field-button" id="field-user">
+            <div class="field">
                 <label>Perfil del usuario</label>
                 <div>
                     <input type="radio" name="perfil" value="comprador">
@@ -86,8 +86,8 @@
                     <label>Vendedor</label>
                 </div>
             </div>
-            <div class="field field-button">
-                <label for="interes">Categorías de interés</label>
+            <div class="field">
+                <div><label for="interes">Categorías de interés</label></div>
                 <div>
                     <input type="checkbox" name="interes" value="electro">
                     <label>Electro</label>
@@ -115,15 +115,15 @@
             </div>
             <div class="field">
                 <label>Contraseña</label>
-                <input type="password">
+                <input type="password" minlength="8">
             </div>
             <div class="field">
                 <label>Confirmar contraseña</label>
-                <input type="password">
+                <input type="password" minlength="8">
             </div>
             <button class="action-button" type="submit">
-                <!--<a href="/">-->Registrarse
-                <!--</a>-->
+                <!--<a href="/">--> Registrarse
+                <!-- </a> -->
             </button>
             <button class="action-button" type="reset">Borrar datos</button>
         </form>

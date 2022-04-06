@@ -3,7 +3,6 @@
 https://fontawesome.com/icons?d=gallery&m=free
 */
 
-/* ------------------------------------------------ */
 
 /** Body **/
 
@@ -236,6 +235,9 @@ form div.field-button {
     flex-direction: column;
 }
 
+form input{
+    margin: 5px;
+}
 /* Login */
 .login-title{
     text-align: center;
@@ -296,7 +298,7 @@ footer {
 
 /** Media Queries **/
 
-@media (min-width: 426px) {
+@media (min-width: 361px) {
     .main-header {
         min-height: 230px;
     }
@@ -343,7 +345,7 @@ footer {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     .main-header {
         min-height: 154px;
     }
