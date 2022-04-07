@@ -117,7 +117,7 @@ li {
 #img-banner {
     margin-top: 190px;
     margin-bottom: 20px;
-    position: absolute;
+    /* position: absolute; */
 }
 
 /** EL Main **/

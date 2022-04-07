@@ -10,7 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+
+    <script>
+        function validar(){
+            if(document.getElementById("contraseña").value == document.getElementById("confirContraseña").value){
+            document.getElementById("confirContraseña").style.backgroundColor="#3FCD39"
+            document.getElementById("password-error-message").innerHTML=""
+        }
+        else{
+            document.getElementById("confirContraseña").style.backgroundColor="pink"
+            document.getElementById("password-error-message").innerHTML="Las contraseñas no coinciden"
+            }
+        }
+    </script>
+
     <title>Registrarse - Mercado Liebre</title>
+
 </head>
 
 <body>
@@ -114,12 +129,15 @@
                 <input type="file">
             </div>
             <div class="field">
-                <label>Contraseña</label>
-                <input type="password" minlength="8">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" minlength="8" id="contraseña" required>
             </div>
             <div class="field">
-                <label>Confirmar contraseña</label>
-                <input type="password" minlength="8">
+                <label for="confirContraseña">Confirmar contraseña</label>
+                <input type="password" minlength="8" id="confirContraseña" required onkeyup=validar()>
+            </div>
+            <div>
+                <span id="password-error-message"></span>
             </div>
             <button class="action-button" type="submit">
                 <!--<a href="/">--> Registrarse
